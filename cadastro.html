@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro — Alimenta SESI</title>
+  <meta name="description" content="Crie sua conta no Alimenta SESI e comece a usar a cantina escolar inteligente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Alimenta <strong>SESI</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="index.html#destaques">Diferenciais</a>
+        <a href="index.html#cardapio">Cardápio</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="login.html" class="nav-cta">Entrar</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ CADASTRO ============ -->
+  <main class="login-wrap">
+    <div class="login-bg-shape shape-a"></div>
+    <div class="login-bg-shape shape-b"></div>
+
+    <section class="login-card register-card reveal">
+      <div class="login-header">
+        <div class="login-icon"><i class="fa-solid fa-user-plus"></i></div>
+        <h1>Crie sua conta</h1>
+        <p>Junte-se ao Alimenta SESI e transforme sua experiência na cantina.</p>
+      </div>
+
+      <form id="registerForm" class="login-form" novalidate>
+        <!-- Nome completo -->
+        <label class="field">
+          <span>Nome completo</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-id-card"></i>
+            <input type="text" name="nome" id="nome" placeholder="Maria da Silva" required />
+          </div>
+        </label>
+
+        <!-- E-mail -->
+        <div class="form-grid-2">
+          <label class="field">
+            <span>E-mail</span>
+            <div class="input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="seu@email.com" required />
+            </div>
+          </label>
+        </div>
+
+        <!-- Grid: Tipo de usuário + Turma -->
+        <div class="form-grid-2">
+          <label class="field">
+            <span>Tipo de usuário</span>
+            <div class="input-wrap select-wrap">
+              <i class="fa-solid fa-users"></i>
+              <select name="tipo" id="tipo" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="aluno">Aluno</option>
+                <option value="responsavel">Responsável</option>
+                <option value="professor">Professor</option>
+                <option value="funcionario">Funcionário</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </label>
+          <label class="field">
+            <span>Turma / Setor</span>
+            <div class="input-wrap">
+              <i class="fa-solid fa-school"></i>
+              <input type="text" name="turma" id="turma" placeholder="3º Ano A" />
+            </div>
+          </label>
+        </div>
+
+        <!-- Senha -->
+        <label class="field">
+          <span>Senha</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="senha" id="senhaCadastro" placeholder="Mínimo 8 caracteres" required minlength="8" />
+            <button type="button" class="toggle-pass" id="togglePassCadastro" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </label>
+
+        <!-- Confirmar senha -->
+        <label class="field">
+          <span>Confirmar senha</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Repita a senha" required />
+            <button type="button" class="toggle-pass" id="togglePassConfirmar" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </label>
+
+        <!-- Termos -->
+        <label class="check">
+          <input type="checkbox" id="termos" required />
+          <span class="check-box"></span>
+          Aceito os <a href="#" class="terms-link">Termos de Uso</a> e a <a href="#" class="terms-link">Política de Privacidade</a>
+        </label>
+
+        <!-- Botão -->
+        <button type="submit" class="btn btn-primary btn-block" id="submitRegisterBtn">
+          <span class="btn-label"><i class="fa-solid fa-user-plus"></i> Criar conta</span>
+        </button>
+
+        <p class="signup">Já tem conta? <a href="login.html">Fazer login</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```// filepath: c:\Users\arthur_kologeski\Desktop\frontend\cadastro.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro — Alimenta SESI</title>
+  <meta name="description" content="Crie sua conta no Alimenta SESI e comece a usar a cantina escolar inteligente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Alimenta <strong>SESI</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="index.html#destaques">Diferenciais</a>
+        <a href="index.html#cardapio">Cardápio</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="login.html" class="nav-cta">Entrar</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ CADASTRO ============ -->
+  <main class="login-wrap">
+    <div class="login-bg-shape shape-a"></div>
+    <div class="login-bg-shape shape-b"></div>
+
+    <section class="login-card register-card reveal">
+      <div class="login-header">
+        <div class="login-icon"><i class="fa-solid fa-user-plus"></i></div>
+        <h1>Crie sua conta</h1>
+        <p>Junte-se ao Alimenta SESI e transforme sua experiência na cantina.</p>
+      </div>
+
+      <form id="registerForm" class="login-form" novalidate>
+        <!-- Nome completo -->
+        <label class="field">
+          <span>Nome completo</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-id-card"></i>
+            <input type="text" name="nome" id="nome" placeholder="Maria da Silva" required />
+          </div>
+        </label>
+
+        <!-- E-mail -->
+        <div class="form-grid-2">
+          <label class="field">
+            <span>E-mail</span>
+            <div class="input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="seu@email.com" required />
+            </div>
+          </label>
+        </div>
+
+        <!-- Grid: Tipo de usuário + Turma -->
+        <div class="form-grid-2">
+          <label class="field">
+            <span>Tipo de usuário</span>
+            <div class="input-wrap select-wrap">
+              <i class="fa-solid fa-users"></i>
+              <select name="tipo" id="tipo" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="aluno">Aluno</option>
+                <option value="responsavel">Responsável</option>
+                <option value="professor">Professor</option>
+                <option value="funcionario">Funcionário</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </label>
+          <label class="field">
+            <span>Turma / Setor</span>
+            <div class="input-wrap">
+              <i class="fa-solid fa-school"></i>
+              <input type="text" name="turma" id="turma" placeholder="3º Ano A" />
+            </div>
+          </label>
+        </div>
+
+        <!-- Senha -->
+        <label class="field">
+          <span>Senha</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="senha" id="senhaCadastro" placeholder="Mínimo 8 caracteres" required minlength="8" />
+            <button type="button" class="toggle-pass" id="togglePassCadastro" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </label>
+
+        <!-- Confirmar senha -->
+        <label class="field">
+          <span>Confirmar senha</span>
+          <div class="input-wrap">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Repita a senha" required />
+            <button type="button" class="toggle-pass" id="togglePassConfirmar" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </label>
+
+        <!-- Termos -->
+        <label class="check">
+          <input type="checkbox" id="termos" required />
+          <span class="check-box"></span>
+          Aceito os <a href="#" class="terms-link">Termos de Uso</a> e a <a href="#" class="terms-link">Política de Privacidade</a>
+        </label>
+
+        <!-- Botão -->
+        <button type="submit" class="btn btn-primary btn-block" id="submitRegisterBtn">
+          <span class="btn-label"><i class="fa-solid fa-user-plus"></i> Criar conta</span>
+        </button>
+
+        <p class="signup">Já tem conta? <a href="login.html">Fazer login</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
