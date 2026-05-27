@@ -1,8 +1,3 @@
-/* ============================================================
-   ALIMENTA SESI — Estilo unificado
-   Paleta principal: #6e1013 (vinho) + dourado + neutros
-   ============================================================ */
-
 :root {
   --primary: #6e1013;
   --primary-dark: #4d0a0c;
@@ -38,7 +33,6 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
-/* ============ NAVBAR ============ */
 .navbar {
   position: sticky;
   top: 0;
@@ -107,7 +101,6 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   background: none;
@@ -128,7 +121,6 @@ img { max-width: 100%; display: block; }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-/* ============ BUTTONS ============ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -167,7 +159,6 @@ img { max-width: 100%; display: block; }
 .btn-block { width: 100%; }
 .btn[disabled] { opacity: 0.85; cursor: wait; }
 
-/* ============ HERO ============ */
 .hero {
   position: relative;
   max-width: 1200px;
@@ -255,7 +246,6 @@ img { max-width: 100%; display: block; }
   color: var(--text-soft);
 }
 
-/* Ilustração */
 .hero-illustration {
   position: relative;
   height: 460px;
@@ -314,7 +304,6 @@ img { max-width: 100%; display: block; }
   50% { transform: translateY(-14px); }
 }
 
-/* ============ DESTAQUES ============ */
 .destaques {
   max-width: 1200px;
   margin: 0 auto;
@@ -375,7 +364,6 @@ img { max-width: 100%; display: block; }
 .feature-card h3 { font-size: 1.2rem; margin-bottom: 8px; font-weight: 700; }
 .feature-card p { color: var(--text-soft); font-size: 0.95rem; }
 
-/* ============ CTA BANNER ============ */
 .cta-banner {
   max-width: 1200px;
   margin: 40px auto 80px;
@@ -409,7 +397,6 @@ img { max-width: 100%; display: block; }
 }
 .cta-banner .btn-primary:hover { background: var(--gold-soft); }
 
-/* ============ FOOTER ============ */
 .footer {
   background: var(--primary-dark);
   color: #fff;
@@ -447,7 +434,6 @@ img { max-width: 100%; display: block; }
   opacity: 0.7;
 }
 
-/* ============ LOGIN ============ */
 .login-page { background: linear-gradient(135deg, #fafafa, #f0e8e9); min-height: 100vh; }
 .login-wrap {
   position: relative;
@@ -587,7 +573,6 @@ img { max-width: 100%; display: block; }
 .signup a { color: var(--primary); font-weight: 600; }
 .signup a:hover { text-decoration: underline; }
 
-/* ============ CADASTRO ============ */
 .register-card { max-width: 520px; }
 .form-grid-2 {
   display: grid;
@@ -624,7 +609,6 @@ img { max-width: 100%; display: block; }
 .terms-link { color: var(--primary); font-weight: 600; }
 .terms-link:hover { text-decoration: underline; }
 
-/* Spinner */
 .spinner {
   width: 16px; height: 16px;
   border: 2px solid rgba(255,255,255,0.3);

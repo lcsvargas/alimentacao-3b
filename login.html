@@ -3,60 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Login — Alimenta SESI</title>
-  <meta name="description" content="Acesse sua conta Alimenta SESI e gerencie pedidos da cantina escolar." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <meta
+    name="description"
+    content="Acesse sua conta Alimenta SESI e gerencie pedidos da cantina escolar."
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="login-page">
-  <!-- ============ NAVBAR ============ -->
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <i class="fa-solid fa-utensils"></i>
         <span>Alimenta <strong>SESI</strong></span>
       </a>
+
       <nav class="nav-links" id="navLinks">
         <a href="index.html">Início</a>
         <a href="index.html#destaques">Diferenciais</a>
         <a href="index.html#cardapio">Cardápio</a>
         <a href="index.html#contato">Contato</a>
-        <a href="login.html" class="nav-cta active">Entrar</a>
+
+        <a href="login.html" class="nav-cta active">
+          Entrar
+        </a>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
-  <!-- ============ LOGIN ============ -->
   <main class="login-wrap">
     <div class="login-bg-shape shape-a"></div>
     <div class="login-bg-shape shape-b"></div>
 
     <section class="login-card reveal">
       <div class="login-header">
-        <div class="login-icon"><i class="fa-solid fa-user-graduate"></i></div>
+        <div class="login-icon">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+
         <h1>Bem-vindo de volta</h1>
-        <p>Acesse sua conta e gerencie sua cantina escolar.</p>
+
+        <p>
+          Acesse sua conta e gerencie sua cantina escolar.
+        </p>
       </div>
 
       <form id="loginForm" class="login-form" novalidate>
         <label class="field">
           <span>E-mail ou RM</span>
+
           <div class="input-wrap">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="usuario" id="usuario" placeholder="seu.email@sesi.com.br" required />
+
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              placeholder="seu.email@sesi.com.br"
+              required
+            />
           </div>
         </label>
 
         <label class="field">
           <span>Senha</span>
+
           <div class="input-wrap">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" name="senha" id="senha" placeholder="••••••••" required />
-            <button type="button" class="toggle-pass" id="togglePass" aria-label="Mostrar senha">
+
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="••••••••"
+              required
+            />
+
+            <button
+              type="button"
+              class="toggle-pass"
+              id="togglePass"
+              aria-label="Mostrar senha"
+            >
               <i class="fa-solid fa-eye"></i>
             </button>
           </div>
@@ -65,17 +117,32 @@
         <div class="form-row">
           <label class="check">
             <input type="checkbox" id="remember" />
+
             <span class="check-box"></span>
+
             Lembrar de mim
           </label>
-          <a href="#" class="forgot">Esqueci a senha</a>
+
+          <a href="#" class="forgot">
+            Esqueci a senha
+          </a>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
-          <span class="btn-label"><i class="fa-solid fa-right-to-bracket"></i> Entrar</span>
+        <button
+          type="submit"
+          class="btn btn-primary btn-block"
+          id="submitBtn"
+        >
+          <span class="btn-label">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Entrar
+          </span>
         </button>
 
-        <p class="signup">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <p class="signup">
+          Não tem conta?
+          <a href="cadastro.html">Cadastre-se</a>
+        </p>
       </form>
     </section>
   </main>
