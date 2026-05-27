@@ -1,11 +1,9 @@
 const express = require('express');
-const session = require('express-session');
 const cors = require('cors');
 const clr = require('connect-livereload');
-const bcrypt = require('bcrypt');
-const livereload = require('livereload');
 
 const db = require('./database');
+const services = require('./services');
 const port = 3000;
 const saltrounds = 10;
 
